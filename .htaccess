@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^users$ index.php?set=users [NC,L]
+RewriteRule ^user/([0-9]+)$ index.php?set=user&id=$1 [NC,L] 
+RewriteRule ^user/([a-z]+)$ index.php?&set=$1 [NC,L] 
